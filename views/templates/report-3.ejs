@@ -1,0 +1,79 @@
+<%include ../partials/head %>
+<!-- <%include ../partials/nav.ejs %> -->
+<section class="">
+	<%include ../partials/header %>
+	<div class="header text-center">
+		<div class="h1">Details of Complaint</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form id="report-step-2" class="form" action="/report/step-4" method="POST">
+					<div class="">
+					<p>Witness Details</p>
+						<div class="form-group row">
+							<label for="inputComplaintAgainstDept" class="col-sm-2 form-control-label">Full Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputComplaintAgainstDept" name="inputComplaintAgainstDept" placeholder="eg: Doris Lori">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputComplaintAgainstDept" class="col-sm-2 form-control-label">Contact Details</label>
+							<div class="col-sm-10">
+								<textarea type="text" class="form-control" id="inputComplaintAgainstDept" name="inputComplaintAgainstDept" placeholder="eg: Doris Lori - PO BOX 0, Lae, PNG"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<p>Evidence and Supporting Details</p>
+						<div class="form-group row">
+							<label for="inputComplaintAgainstPersonName" class="col-sm-2 form-control-label">Upload files</label>
+							<div class="col-sm-10">
+								<input type="file" class="form-control" id="inputComplaintAgainstPersonName" name="inputComplaintAgainstPersonName" placeholder="Full Name eg: Josephine Citrus">
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<p>What do you want Ombudsman Commision to do?</p>
+						<div class="form-group row">
+							<label for="inputIncidentProvince" class="text-right col-sm-2 form-control-label">1</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentProvince" name="inputIncidentProvince" placeholder="eg: Take the persons responsible and or the department to court">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputIncidentProvince" class="text-right col-sm-2 form-control-label">2</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentProvince" name="inputIncidentProvince" placeholder="eg: Report the people to their bosses">
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<p>What actions have you taken to remedy (solve) this complaint before approaching Ombudsman Commission?</p>
+						<div class="form-group row">
+							<label for="inputIncidentProvince" class="text-right col-sm-2 form-control-label">1</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentProvince" name="inputIncidentProvince" placeholder="eg: Reported the person responsible to the police and nothing has been done about it since.">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputIncidentProvince" class="text-right col-sm-2 form-control-label">2</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentProvince" name="inputIncidentProvince" placeholder="eg: I wrote a letter to their boss seeking disciplinary actions to be taken on the staff and nothing has been done since">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<button type="submit" name="submitStep1" class="btn btn-primary btn-block">Submit Complaint</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

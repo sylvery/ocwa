@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+	.center-xs {
+		text-align: center;
+	}
+}
+.fixed-bottom {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+.bg-lite{
+    background: powderblue;
+    padding: 5em;
+}

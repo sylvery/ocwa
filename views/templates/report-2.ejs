@@ -1,0 +1,73 @@
+<%include ../partials/head %>
+<!-- <%include ../partials/nav.ejs %> -->
+<section class="">
+	<%include ../partials/header %>
+	<div class="header text-center">
+		<div class="h1">Details of Complaint</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form id="report-step-3" class="form" action="/report/step-3" method="POST">
+					<div class="">
+						<div class="form-group row">
+							<label for="inputComplaintAgainstDept" class="col-sm-2 form-control-label">Department/Statutory Body/Agency etc you are complaining against</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputComplaintAgainstDept" name="inputComplaintAgainstDept" placeholder="eg: Department of Lands & Physical Planning">
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<p>Person(s) conduct you are complaining against</p>
+						<div class="form-group row">
+							<label for="inputComplaintAgainstPersonName" class="col-sm-2 form-control-label">Full Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputComplaintAgainstPersonName" name="inputComplaintAgainstPersonName" placeholder="Full Name eg: Josephine Citrus">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputComplaintAgainstPersonPosition" class="col-sm-2 form-control-label">Title or Position</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputComplaintAgainstPersonPosition" name="inputComplaintAgainstPersonPosition" placeholder="Title/Position eg: Chief Medical Examiner">
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<p>Incident Details</p>
+						<div class="form-group row">
+							<label for="inputIncidentProvince" class="col-sm-2 form-control-label">Province</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentProvince" name="inputIncidentProvince" placeholder="eg: New Ireland Province">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputIncidentDate" class="col-sm-2 form-control-label">Date</label>
+							<div class="col-sm-10">
+								<input type="date" class="form-control" id="inputIncidentDate" name="inputIncidentDate" placeholder="22/02/2017">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputIncidentSubject" class="col-sm-2 form-control-label">Subject</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputIncidentSubject" name="inputIncidentSubject" placeholder="eg: Ill Treatment">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputIncidentDetails" class="col-sm-2 form-control-label">Details</label>
+							<div class="col-sm-10">
+								<textarea type="date" form="report-step-2" class="form-control" id="inputIncidentDetails" name="inputComplaintAgainstPersonPosition" placeholder="Who did what to you where, when and how? Give details in here."></textarea>
+							</div>
+						</div>
+						<div>
+							<div class="form-group row">
+								<div class="col-sm-12">
+									<button type="submit" name="submitStep1" class="btn btn-primary btn-block">Next Section</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

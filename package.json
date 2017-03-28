@@ -1,0 +1,24 @@
+{
+  "name": "ocwa",
+  "version": "1.0.0",
+  "description": "OMBUDSMAN COMMISSION WEB APPLICATION",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "law",
+    "justice"
+  ],
+  "author": "sylvery",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "formBuilder": "^1.24.6",
+    "ejs": "^2.*"
+  },
+  "dev-dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
+}

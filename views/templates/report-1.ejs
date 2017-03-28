@@ -1,0 +1,63 @@
+<%include ../partials/head %>
+<!-- <%include ../partials/nav %> -->
+<section class="">
+	<%include ../partials/header %>
+	<div class="header text-center">
+		<div class="h1">Complainant's (Your) Details</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="form" action="/report/step-2" method="POST">
+					<div class="">
+						<div class="form-group row">
+							<label for="inputFullName" class="col-sm-2 form-control-label">Full Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputFullName" name="inputFullName" placeholder="eg: Peter">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputEmail" class="col-sm-2 form-control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="eg: Email">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputAddress" class="col-sm-2 form-control-label">Residental Address</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="eg: Section: 000, Allotment: 000, Koboni Street, 4-Mile, Lae, Papua New Guinea">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputComplainantEmployer" class="col-sm-2 form-control-label">Where do you work?</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputComplainantEmployer" name="inputComplainantEmployer" placeholder="eg: XYZ Ltd, Lae">
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="">
+						<p>Relative we can contact when you are not available</p>
+						<div class="form-group row">
+							<label for="inputRelativeFullName" class="col-sm-2 form-control-label">Full Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputRelativeFullName" name="inputRelativeFullName" placeholder="eg: Lucy Spring Onion">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputRelativeContactNumber" class="col-sm-2 form-control-label">Contact Number</label>
+							<div class="col-sm-10">
+								<input type="number" min="70000000" max="79999999" class="form-control" id="inputRelativeContactNumber" name="inputRelativeContactNumber" placeholder="eg: XYZ Ltd, Lae">
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-12">
+							<button type="submit" name="submitStep1" class="btn btn-primary btn-block">Next Section</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
