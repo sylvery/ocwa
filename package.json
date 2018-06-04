@@ -13,12 +13,14 @@
   "author": "sylvery",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.*",
     "express": "^4.15.2",
-    "formBuilder": "^1.24.6",
-    "ejs": "^2.*"
+    "express-session": "latest"
   },
-  "dev-dependencies": {
+  "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "morgan": "latest"
   }
 }
